@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educat - Transforming online Education</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style-1.css">
+    <style>
+        /* making the navbar a drop down hamburger */
+        /* by making it like column flexbox */
+        @media screen and (max-width: 50em) {
+            html {
+                background-color: rgb(131, 133, 255);
+            }
+
+            .navbar {
+                position: absolute;
+                top: 0;
+                display: flex;
+                flex-direction: column;
+                padding: 2em 0;
+            }
+
+            
+
+            #nav-links-list{
+                /* display: flex; */
+                flex-direction: column;
+            }
+            #nav-links-list>.pointer{
+                margin: 0.4em 0;
+                /* padding: 0.5em; */
+
+            }
+            #search-set{
+                display: flex;
+                flex-direction: column;
+            }
+            .search-items{
+                margin: 0.4em 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-left nav-item">
+            <ul id="nav-links-list">
+                <img class="logo pointer" src="./images/laptop.png" alt="Educat" srcset="">
+                <li class="pointer"><a href="#">
+                        Home
+                    </a>
+                </li>
+                <li class="pointer"><a href="#">
+                        About
+                    </a>
+                </li>
+                <li class="pointer"><a href="#">
+                        Services
+                    </a>
+                </li>
+                <li class="pointer"><a href="#contact-us">
+                        Contact Us
+                    </a>
+                </li>
+                <!-- <ul>
+                    <a href="#">Themes</a>
+                    <li></li>
+                </ul> -->
+            </ul>
+        </div>
+        <div id="search-set">
+            <input class="search-items" type="text" name="search-query">
+            <button class="search-items">Search</button>
+        </div>
+    </nav>
+    <header>
+        <div class="header-text-content">
+            <h1 class="header-text">Future of Education has arrived</h2>
+                <p class="header-text">In the world of 7 billion people there is more hunger of Education than we
+                    actually think. We are proud to announce the future of education which will essentially feed the
+                    need of learning hunger.
+                </p>
+                <button>Subscribe</button>
+                <button>See guide</button>
+        </div>
+        <div class="header-image">
+            <img class="header-logo" src="./images/laptop.png" alt="educat" srcset="">
+        </div>
+    </header>
+    <main>
+        <section class="sec-1">
+            <div class="sec-1-text">
+                <h2>The solution to all your online learning hurdles</h2>
+                <p>Education is the process of facilitating learning, or the acquisition of knowledge, skills, values,
+                    morals, beliefs, habits, and personal development.[1] Education originated as transmission of
+                    cultural heritage from one generation to
+                    the next. Today, educational goals increasingly encompass new ideas such as liberation of learners,
+                    critical thinking about presented information, skills needed for the modern society, empathy and
+                    complex vocational skills.</p>
+            </div>
+            <img src="./images/laptop-img-min.jpg" alt="educat-solution" srcset="">
+        </section>
+        <section class="sec-2">
+            <img src="./images/transform-education-min.jpg" alt="educat-solution" srcset="">
+            <div class="sec-2-text">
+                <h2>Transforming Education in the world</h2>
+                <p>Many public schools provide a free education through the government. Parents may send their own
+                    children to a private schools, but they must pay for it. In some poorer places, some children cannot
+                    go to school, because their countries
+                    do not make education available in their countries, or because their families do not have enough
+                    money, or because the children have to work for money. or because the society have negative
+                    prejudice on education for girls. The city
+                    of Alexandria in Egypt. established in 330 BCE. became the successor to Athens as the intellectual
+                    cradle of Ancient Greece. There, the great Library of Alexandria was built in the 3rd century BCE.
+                    European civilizations suffered a
+                    collapse of literacy and organisation following the fall of Rome in CI 416.
+                </p>
+            </div>
+        </section>
+        <section class="sec-3">
+            <div class="sec-3-text">
+                <h2>Lets grow together</h2>
+                <p>Education began in prehistory. as adults trained the young in the knowledge and skills deemed
+                    necessary in their society. In pre-literate societies, this was achieved orally and through
+                    imitation. Story-telling passed knowledge. values,
+                    and skills from one generation to the next. As cultures began to extend their knowledge beyond
+                    skills that could be readily learned through imitation, formal education developed. Schools existed
+                    in Egypt at the time of the Middle Kingdom.
+                    Matteo Ricci (left) and Xu Guangqi (right) in the Chinese edition of Euclid’s Elements published in
+                    1607 Plato founded the Academy in Athens, the first institution of higher learning in Europe.
+
+                </p>
+            </div>
+            <img src="./images/grow-together-min.jpg" alt="educat-solution" srcset="">
+        </section>
+        <div id="contact-us">
+            <h2>Contact Us</h2>
+            <form action="">
+                <input type="text" placeholder="Enter your name" required>
+                <input type="number" placeholder="Enter your contact number" required>
+                <input type="email" placeholder="Enter your email address" required>
+                <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Ask any query?.."></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+    </main>
+    <footer>
+        <div>
+            Copyright 2022 | www.educat.com | All rights reserved
+        </div>
+    </footer>
+</body>
+
+</html>
