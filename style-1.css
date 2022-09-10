@@ -120,6 +120,8 @@ header::before {
     bottom: 0vh;
     opacity: 0.7;
     background: url("images/bkground-project-2-min.jpg");
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 header {
